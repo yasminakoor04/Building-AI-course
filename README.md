@@ -5,6 +5,9 @@ Building AI Course – AI Project Idea
 
 ParkSense predicts safety hazards and maintenance needs in public parks using sensor and visitor data, proactively alerting staff to improve safety and park upkeep.
 
+![ParkSense Workflow](ParkSense_AI_for_Park_Management.png)
+*Figure: ParkSense predicts hazards and alerts park staff for proactive maintenance.*
+
 ## Background
 
 The project addresses these problems:  
@@ -17,18 +20,18 @@ The project addresses these problems:
 
 ## How it is used
 
-1. Sensors (motion, weather, camera feeds) collect data on park conditions.  
-2. Visitors can submit reports via a mobile app about hazards or broken equipment.  
-3. AI predicts risk areas and schedules maintenance proactively.  
-4. Park staff receive alerts and can act before problems escalate.  
+1. **Sensors** (motion, weather, camera feeds) collect data on park conditions.  
+2. **Visitors** can submit reports via a mobile app about hazards or broken equipment.  
+3. **AI** predicts risk areas and schedules maintenance proactively.  
+4. **Park staff** receive alerts and can act before problems escalate.  
 
 **Target users:** Municipal park authorities, maintenance teams, and park visitors.  
 
 ## Data sources and AI methods
 
-* Sensor data: moisture, temperature, motion detectors  
-* Visitor data: anonymized foot traffic patterns  
-* Optional image data: public cameras or drones (ethical guidelines applied)  
+* **Sensor data:** moisture, temperature, motion detectors  
+* **Visitor data:** anonymized foot traffic patterns  
+* **Optional image data:** public cameras or drones (ethical guidelines applied)  
 
 **AI methods:**  
 * Supervised learning for hazard prediction  
@@ -43,7 +46,7 @@ The project addresses these problems:
 * Ethical considerations: anonymization of visitor data, privacy for any camera use.  
 * Weather conditions or sensor failures may reduce accuracy.
 
-## What next
+## What next:
 
 * Integration with mobile apps to notify visitors of hazards in real-time.  
 * Expansion to multiple parks or city-wide implementation.  
