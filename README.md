@@ -39,6 +39,56 @@ The project addresses these problems:
 * Anomaly detection to spot unusual patterns  
 * Optional: computer vision for image-based hazard detection
 
+## Sample Code
+
+Here is a small illustrative example showing how AI could predict hazards using sensor data:
+
+```python
+from sklearn.ensemble import RandomForestClassifier
+import numpy as np
+
+# ----------------------------
+# Sample sensor data: [moisture, temperature, motion]
+# ----------------------------
+X = np.array([
+    [0.3, 22, 5],
+    [0.8, 18, 12],
+    [0.1, 25, 2],
+    [0.5, 20, 8]
+])
+
+# Labels: 0 = safe, 1 = hazard
+y = np.array([0, 1, 0, 1])
+
+# ----------------------------
+# Train a simple classifier
+# ----------------------------
+clf = RandomForestClassifier()
+clf.fit(X, y)
+
+# ----------------------------
+# Predict hazard for new sensor reading
+# ----------------------------
+new_data = np.array([[0.6, 19, 10]])
+prediction = clf.predict(new_data)
+print("Hazard risk:", "Yes" if prediction[0] == 1 else "No")
+
+# ----------------------------
+# Optional alert system
+# In a real system, this could trigger an email, push notification, or dashboard alert
+# ----------------------------
+if prediction[0] == 1:
+    print("Alert: Hazard detected! Notify park staff immediately.")
+
+# ----------------------------
+# Note: In a real implementation, you would:
+# 1. Collect larger datasets from all park sensors
+# 2. Preprocess and normalize sensor values
+# 3. Evaluate model accuracy with metrics like accuracy, precision, recall
+# 4. Integrate with a real-time alert system for park staff
+# ----------------------------
+```
+
 ## Challenges
 
 * Cannot prevent accidents completely; only provides alerts.  
